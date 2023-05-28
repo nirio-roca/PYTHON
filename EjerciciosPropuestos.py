@@ -5,7 +5,7 @@ dd/mm/aaaa), calcule el día siguiente. Asuma que el mes tiene 30
 días.
 
 """
-print("     Ingrese fecha   ")
+print("  🗓📆🗓📆📆   Ingrese fecha  🗓📆🗓📆📆  ")
 
 ## Bucle para que ingre un dia correcto
 dia = int(input("Ingrese el dia (dd): "))
