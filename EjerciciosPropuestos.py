@@ -1,33 +1,77 @@
-"""
-Hacer un algoritmo, que dada una fecha del año 2000
-(representada por el día, el mes y el año en formato numérico
-dd/mm/aaaa), calcule el día siguiente. Asuma que el mes tiene 30
-días.
 
-"""
+
+opcion =input("""
+      .------------------------------------.
+      |          Menú de Áreas             |
+      |                                    |
+      |         1) Círculo                 |
+      |         2) Triángulo equilátero    |
+      '------------------------------------'
+            Eliga una opción: """)
+
+if opcion == "1":
+
+    print(" -------- Calculando el Area de un Círculo -------- ")
+
+    r = float (input("Ingrese el radio del circulo: "))
+
+    if (r <= 0) :
+        print(" radio del círculo no válida")
+    else:
+        pi = 13.1416
+
+        AreaCirulo = pi*(r**2)
+
+        print("Area del círculo es: ",round(AreaCirulo,2))
+      
+
+    
+elif opcion  == "2":
+
+    print(" -------- Calculando el Area de un Triángulo Equilátero -------- ")
+
+    lado = float (input("Ingrese la base del triángulo equilátero : "))
+    if (lado <= 0) :
+        print(" radio del círculo no válida")
+    else:
+        AreatrianguloE = ((3**0.5) *(lado**2)) /2;
+        print("Area del triángulo equilátero es: ",round(AreatrianguloE,2))
+
+else:
+    print("Opcion no valida")
+
+
+print("\n\n\n")
+
+
+d = float(input("Ingrese la distancia que los separa (m): "))
+
+    
+v1 = float(input("Ingrese la velociadad del auto 1 (m/s): "))
+
+
+v2 = float(input("Ingrese la velociadad del auto 2 (m/s): "))
+
+
+t =  d / ( v1 + v2);
+
+print("El tiempo de encuentro es ", round(t,2)," m/s ")
+
+
+
+
+print("\n\n\n")
+
+
 print("  🗓📆🗓📆📆   Ingrese fecha  🗓📆🗓📆📆  ")
 
-## Bucle para que ingre un dia correcto
+
 dia = int(input("Ingrese el dia (dd): "))
-while not(0 < dia < 31):
-    print(" Día no es válido")
-    dia = int(input("Ingrese el dia: "))
-
-
 
 mes = int(input("Ingrese el mes (mm): "))
-## Bucle para que ingre un mes correcto
-while not( ( 0 < len(str(mes)) < 3) and ( 0 < mes < 13) ):
-    print(" Mes no es válido")
-    mes = int(input("Ingrese el mes: "))
 
 
-## Bucle para que ingre un año correcto
 ano = int(input("Ingrese el año (aaaa): "))
-while not(len(str(ano)) == 4):
-    print(" Año no es válido")
-    ano = int(input("Ingrese el año: "))
-
 
 
             #validar mes
@@ -38,10 +82,12 @@ if dia == 30:
     if (mes == 12):
         mes = 1
         ano +=1
-    else:
+    else: 
         mes += 1
 else:
      dia +=1
+
+     
 
 
 if len(str(mes)) == 1 and len(str(dia)) == 1 :
@@ -85,3 +131,16 @@ else:
     else:
         resultado = costo + (costo*0.2)
 print("El coste a pagar es de:",resultado)
+
+
+
+
+
+
+
+
+
+
+
+
+
