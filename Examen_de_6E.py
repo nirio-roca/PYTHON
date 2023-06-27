@@ -1,19 +1,20 @@
 
-
+# Solicitar tipo de dulce 
 tipo_dulce = input("""
                     
-               🍬🍭🍫🍡🍬🍭🍫🍡 DULCERIA DULCINA S.A 🍬🍭🍫🍡🍬🍭🍫🍡
+               		     DULCERIA DULCINA S.A 
                 '--------------------------------------------------'                     
                 |          Tipos        |    Precio Unitario   s/. |     
                 |--------------------------------------------------|    
-                |    1) Bubbaloo   🍬   |         3.00             |  
+                |    1) Bubbaloo        |         3.00             |  
                 |--------------------------------------------------|  
-                |    2) Globo Pop  🍭   |         4.00             |  
+                |    2) Globo Pop       |         4.00             |  
                 |--------------------------------------------------|  
-                |    3) Sublime  🍫      |         5.00             |  
+                |    3) Sublime         |         5.00             |  
                 |--------------------------------------------------|                         
                             ¿Qué tipo de dulce desea?
                                     : """);
+# Determinar el tipo y leer la cantidad 
 if(tipo_dulce == "1"):
     cantidad = int(input("""
     
